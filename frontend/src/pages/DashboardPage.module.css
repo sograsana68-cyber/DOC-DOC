@@ -1,0 +1,185 @@
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 1.25rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.brandMark {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 0.9rem;
+}
+
+.sidebarHead {
+  padding: 1rem 1rem 0.5rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+}
+
+.memberList {
+  list-style: none;
+  margin: 0;
+  padding: 0 0.5rem;
+}
+
+.memberBtn,
+.memberBtnActive {
+  width: 100%;
+  text-align: left;
+  padding: 0.65rem 0.75rem;
+  margin-bottom: 0.25rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.memberBtn:hover {
+  background: rgba(148, 163, 184, 0.15);
+}
+
+.memberBtnActive {
+  background: #1e3a8a;
+  color: #fff;
+}
+
+.memberName {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.memberRel {
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background: #f4f5f7;
+}
+
+.topbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.25rem 1.75rem;
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.pageTitle {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.userLine {
+  margin: 0.35rem 0 0;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.outBtn {
+  padding: 0.45rem 0.85rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  color: #334155;
+  font-size: 0.875rem;
+}
+
+.outBtn:hover {
+  background: #f8fafc;
+}
+
+.content {
+  padding: 1.5rem 1.75rem;
+  flex: 1;
+}
+
+.docsTitle {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.docList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.docCard {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.docTitle {
+  font-weight: 600;
+}
+
+.docMeta {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.muted {
+  color: #64748b;
+  margin: 0;
+}
+
+.err {
+  color: #b91c1c;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .memberList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .memberBtn,
+  .memberBtnActive {
+    width: auto;
+  }
+}
